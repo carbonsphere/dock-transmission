@@ -1,5 +1,8 @@
 #  Transmission on Docker
-----------------------
+
+```
+CentOS 7 with Transmission & Daemon from epel-release
+```
 
 ## Download Docker Image:
 ```
