@@ -35,3 +35,13 @@ $ transmission-remote —blocklist-update
 ```
 docker run —name transmission -p 9091:9091 —privileged -d -v {Configuration location}:/root/.config/transmission-daemon -v {Local Download folder}:{Download location set in setting.json} carbonsphere/dock-transmission
 ```
+### Example:
+
+```
+mkdir transmission-test
+cd transmission-test
+git clone https://github.com/carbonsphere/dock-transmission.git
+cd dock-transmission
+mkdir Downloads
+docker run --name transmission -p 9091:9091 --privileged -d -v $(pwd)/transmission-default-config:/root/.config/transmission-daemon -v $(pwd)/Downloads:/Downloads carbonsphere/dock-transmission
+```
