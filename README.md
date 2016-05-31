@@ -25,10 +25,16 @@ VOLUME ["/Downloads”]   <——— According to setting.json
 VOLUME ["/root/.config/transmission-daemon"] <----- According to run command
 ```
 
-## Update Block List
+## Update Block List:
 ```
 docker exec -it transmission bash
 $ transmission-remote —blocklist-update
+```
+
+## Web connection:
+Use local browser to connect and add torrents or magnet links
+```
+127.0.0.1:9091
 ```
 
 ## Run Instructions :
